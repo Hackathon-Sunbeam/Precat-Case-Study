@@ -1,0 +1,69 @@
+Implement a PreCAT scheduling helper utility.
+Application is single user and hence doesn't need any login functionality.
+There will be number of students enrolled in each course. These students are divided into multiple groups e.g. PreCAT students are grouped into C1, C2, etc.
+PreCAT course has multiple modules taught by different lead trainers and assisted by lab mentors. These schedules are conducted in various labs, classrooms
+and/or online.
+Create an application that helps scheduling different faculties (lead/lab) and venues to different modules of all batches. While scheduling application should
+detect the clashes (of venues and faculties) and produce warnings. Note: Do not reject entries, because coordinator might consider merging these batches.
+Ensure that all modules of the PreCAT are scheduled for each batch. Provide report for pending batches/modules.
+Suggested to keep master information of modules (name, hours, ...), faculties (name, lecture/lab, ...), batches (name, admissions, ...), venues (name, location,
+capacity, ...) in separate CSV files. This will help focusing on main scheduling requirements.
+All scheduled batches can be stored in a single CSV/binary file.
+Generate a weekly schedule summary report.
+Also, generate weekly/monthly schedule for each faculty.
+PreCAT Case Study - Technologies:
+C or C++
+DS - User-defined or Built-in
+File IO
+Date/Time handling
+create c project with multilple files and csv file genrate detail code
+
+Display on console:-
+
+Enter Batch name-
+(after selecting batch name go for mode selection)
+Enter Mode of batch- 1. Online
+		 2. Offline - Offline Location - 1. Hinjewadi
+				              2. Marketyard
+(after selecting mode online or offline if it is online then go for type. if it is offline go for location)
+(after selecting location - select venue)
+Enter Hinjewadi Venue- 1. Kaveri
+		    2. Veena
+	 	    3. Koyna
+Enter Hinjewadi Venue- 1. Godavari
+		    2. Narmada
+		    3. Aryabhatta
+(after that go for the type of batch)
+Enter batch name- 1. Regular
+ 	            2. Fastrack
+	            3. Crash
+(after enter batch name go for start date option according to batch lab hours should be fixed)
+For Regular Batch - Total Lab hours - 160
+For Fastrack Batch - Total Lab hours - 120
+For Crash Batch - Total Lab hours - 80
+
+(after selecting total lab hours go for module)
+Enter Regular Batch module hours - 1. C 
+			      2. C++
+			      3. DSA
+			      4. Aptitude
+			      5. Section B(OS, Big Data, Networking)
+
+(This data fetch from CSV file and assign to each module. For that we have to genrate CSV file)
+
+(after assign each module to hours We will display End Date for the batch)
+(after display end date go for Faculty for each module)
+
+(For that genrate CVS file for faculties)
+Display all faculties 
+Then according to batch and module we can assign faculty.
+Then show detail report for the batch 
+i.e
+Batch Name
+Start Date of the batch
+Module Lab hours
+End Date of the batch
+Assigned Faculties per module 
+Batch Mode
+Batch Location
+Batch Type
