@@ -1,6 +1,7 @@
 #ifndef FACULTY_H
 #define FACULTY_H
 
+#define MAX_FACULTIES 10
 typedef struct
 {
     char name[50];

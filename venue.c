@@ -3,12 +3,12 @@
 #include <stdlib.h>
 #include "venue.h"
 
-#define NUM_VENUES 6
 #define MAXCHAR 1000
 #define MAX_VENUES 100
+venue_t venues[MAX_VENUES];
 
-static venue_t venues[MAX_VENUES]; // Array of venue_t structures
-
+// static venue_t venues[MAX_VENUES]; // Array of venue_t structures
+// venue_t venues[MAX_VENUES];        // Define the array
 void loadVenues()
 {
 
@@ -50,12 +50,17 @@ void loadVenues()
     fclose(fp);
 }
 
-void display_venue(venue_t v[], int size)
+void display_venue(venue_t v[], int size, int num_venues)
 {
     for (int i = 0; i < size; i++)
     {
         printf("%s, %s, %s, %d\n", v[i].location, v[i].lecture_venue, v[i].Lab_venue, v[i].capacity);
     }
+}
+
+venue_t *getVenuesArray()
+{
+    return venues;
 }
 
 venue_t assignVenue()

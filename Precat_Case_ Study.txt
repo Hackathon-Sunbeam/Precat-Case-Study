@@ -18,6 +18,9 @@ File IO
 Date/Time handling
 create c project with multilple files and csv file genrate detail code
 
+
+
+
 Display on console:-
 
 Enter Batch name-
@@ -30,7 +33,7 @@ Enter Mode of batch- 1. Online
 Enter Hinjewadi Venue- 1. Kaveri
 		    2. Veena
 	 	    3. Koyna
-Enter Hinjewadi Venue- 1. Godavari
+Enter Marketyard Venue- 1. Godavari
 		    2. Narmada
 		    3. Aryabhatta
 (after that go for the type of batch)
@@ -43,7 +46,7 @@ For Fastrack Batch - Total Lab hours - 120
 For Crash Batch - Total Lab hours - 80
 
 (after selecting total lab hours go for module)
-Enter Regular Batch module hours - 1. C 
+Enter Regular Batch module hours -  1. C 
 			      2. C++
 			      3. DSA
 			      4. Aptitude

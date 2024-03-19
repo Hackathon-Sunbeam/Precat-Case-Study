@@ -6,9 +6,9 @@
 #include "batch.h"
 #define MAXCHAR 1000
 
+Module modules[MAX_MODULES];
 // module.c
-static Module modules[MAX_MODULES]; // Array of module structures
-
+// static Module modules[MAX_MODULES]; // Array of module structures
 int mod_count = 0; // Define mod_count here
 
 void loadModules()
@@ -19,7 +19,7 @@ void loadModules()
     fp = fopen("modules.csv", "r");
     if (fp == NULL)
     {
-        printf("Error opening file!\n");
+        perror("Error opening file");
         exit(EXIT_FAILURE);
     }
 

@@ -15,6 +15,8 @@ typedef struct
     int lab_hrs;
 } Module;
 
+extern Module modules[MAX_MODULES];
+
 void loadModules();
 void displayAllModules(Module md[]);
 Module assignModule();
